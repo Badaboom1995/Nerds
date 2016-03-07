@@ -1,0 +1,23 @@
+{
+  "name": "nerds",
+  "version": "0.0.1",
+  "description": "nerds",
+  "main": "index.html",
+  "dependencies": {
+    "gulp": "^3.9.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Badaboom1995/Nerds.git"
+  },
+  "author": "alex",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Badaboom1995/Nerds/issues"
+  },
+  "homepage": "https://github.com/Badaboom1995/Nerds#readme"
+}
