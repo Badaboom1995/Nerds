@@ -1,0 +1,19 @@
+{
+  "name": "nerds",
+  "homepage": "https://github.com/turushev2/Nerds",
+  "authors": [
+    "Maksim <turushev2@yandex.ru>"
+  ],
+  "description": "nerds",
+  "main": "index.htlm",
+  "moduleType": [],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
