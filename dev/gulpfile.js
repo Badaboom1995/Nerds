@@ -11,7 +11,7 @@ var notify = require("gulp-notify");
 var uncss = require('gulp-uncss');
  
 gulp.task('sass', function () {
-  gulp.src('./sass/style.scss')
+  gulp.src('./sass/**/style.scss')
     .pipe(sass().on('error', sass.logError))
     .pipe(gulp.dest('./css'))
     .pipe(notify("Всё готово, Хозяин!"));
