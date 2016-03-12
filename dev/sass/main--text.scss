@@ -1,0 +1,85 @@
+.main--text {
+
+	padding-top: 70px;
+	padding-bottom: 80px;
+	border-top:2px solid #eeeeee;
+	border-bottom:2px solid #eeeeee;
+	display: flex;
+	p{font-size: 16px;}
+	.main--list {
+			
+			padding-left: 0px;
+			li {padding-left: 35px;
+				list-style-type: none;
+				margin-bottom: 25px;
+				position: relative;
+			}
+			li:before {
+				position: absolute;
+				content:'';
+				width:25px;
+				background-color: #fb565a;
+				height: 2px;
+				left: 0;
+    			top: 50%;
+			}
+	}
+	.main--h4 {
+		text-transform: uppercase;
+		font-weight: normal;
+		margin-bottom: 25px;
+	}
+	&__left{
+		width: 570px;
+		margin-right: 70px;
+		.main--h1 {
+			padding-right: 40px;
+			margin-bottom: 25px;
+			font-size: 36px;
+			margin-top: 0;
+			font-weight: normal;
+			
+		}
+		p {
+			margin-bottom: 50px;
+		}
+		
+	}
+	&__right{
+		width: 240px;
+		.main--logo {
+			text-align: center;
+			margin-bottom: 70px;
+			}
+			    
+			img {
+				margin-bottom: 30px;
+				height: 60px;
+    			width: 180px;
+			}
+			.signature {
+				font-weight: bold;
+				text-transform: uppercase;
+				position: relative;
+			}
+			.signature:before {
+				content: "";
+				width: 70px;
+				background-color: #eeeeee;
+				height: 2px;
+				position: absolute;
+				 left: 0;
+    			top: 50%;
+			}
+			.signature:after {
+				content: "";
+				width: 70px;
+				background-color: #eeeeee;
+				height: 2px;
+				position: absolute;
+				right: 0;
+    			top: 50%;
+			}
+		}
+	}
+
