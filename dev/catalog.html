@@ -36,15 +36,18 @@
   <main class="container catalog-content">
     <form class="catalog-content__filters">
         <fieldset class="catalog-content__cost-filter">
-          <b class="catalog-content__filter-title">Стоимость</b>
-          <div class="catalog-content__range-bar">
+          <b class="catalog-content__filter-title">Стоимость:</b>
+          <div class="catalog-content__progress-bar">
             <div class="catalog-content__range-line">
+              <div class="catalog-content__filled-line"></div>
               <div class="catalog-content__range-from"></div>
               <div class="catalog-content__range-to"></div>
             </div>
           </div>
-          <label for="range-from">От <input type="text" id="range-from"></label>
-          <label for="range-to">До <input type="text" id="range-to"></label>
+          <div class="catalog-content__cost-fields">
+            <label for="range-from">От <input type="text" id="range-from"></label>
+            <label for="range-to">До <input type="text" id="range-to"></label>
+          </div>
         </fieldset>
         <fieldset class="catalog-content__grid-filter">
           <b class="catalog-content__filter-title">Сетка</b>
@@ -60,7 +63,7 @@
           <input type="checkbox" id = "gallery"><label for="gallery">Галлерея</label>
           <input type="checkbox" id = "basket"><label for="basket">Корзина</label>
         </fieldset>
-        <button type="submit">Показать</button>
+        <button class = "button button--grey" type="submit">Показать</button>
     </form>
     <div class="catalog-content__products">
       <form class="catalog-content__sorting-links">

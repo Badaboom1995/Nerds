@@ -1,3 +1,15 @@
 body,html,a{
 	font-family: 'robotomedium', Arial , sans-serif;
 }
+fieldset {
+	border: none;
+}
+body{
+	padding: 0;
+	margin: 0;
+}
+.container{
+	display: block;
+	width: 880px;
+	margin: 0 auto;
+}

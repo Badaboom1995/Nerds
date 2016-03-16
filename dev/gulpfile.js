@@ -9,6 +9,16 @@ var pngquant = require('imagemin-pngquant');
 var uglify = require('gulp-uglify');
 var notify = require("gulp-notify");
 var uncss = require('gulp-uncss');
+var browserSync = require('browser-sync').create();
+
+// Static server
+gulp.task('browser-sync', function() {
+    browserSync.init({
+        server: {
+            baseDir: "./"
+        }
+    });
+});
  
 gulp.task('sass', function () {
   gulp.src('./sass/**/style.scss')
