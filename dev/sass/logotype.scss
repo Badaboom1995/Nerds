@@ -6,5 +6,10 @@
 	&__item{
 		width: 300px;
 		text-align: center;
+		opacity: 0.3;
+		transition:0.5s ;
+	}
+	&__item:hover{
+		opacity: 1;
 	}
 }
