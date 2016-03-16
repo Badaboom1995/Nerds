@@ -1,0 +1,152 @@
+.catalog-content{
+	display: flex;
+	&__filters{
+		width: 242px;
+		margin-right: 75px;
+	}
+	&__cost-filter{
+		margin-bottom: 53px;
+	}
+	&__filter-title{
+		font-size: 18px;
+		margin-bottom: 20px;
+		color:#000;
+		font-weight: normal;
+		display: block;
+	}
+	&__progress-bar{
+		padding: 30px 20px;
+		background-color: #eee;
+		border-radius: 5px;
+		margin-bottom: 14px;
+	}
+	&__range-line{
+		display: block;
+		height: 2px;
+		background-color: #ccc;
+		position: relative;
+	}
+	&__filled-line{
+		background-color: #0c6;
+		display: block;
+		width: 120px;
+		height: 2px;
+	}
+	&__range-from, &__range-to{
+		width: 20px;
+		height: 20px;
+		background-color: #fff;
+		position: absolute;
+		border-radius: 50%;
+		top: 0;
+		transform:translateY(-50%);
+	}
+	&__range-from:before, &__range-to:before{
+		content: "";
+		width: 5px;
+		height: 5px;
+		border-radius: 50%;
+		position: absolute;
+		background-color: #999;
+		top: 50%;
+		left: 50%;
+		transform:translateX(-50%) translateY(-50%);
+	}
+	&__range-to{
+		left: 120px;
+	}
+	&__cost-fields{
+		display: flex;
+	}
+	label[for = "range-from"], label[for = "range-to"]{
+		font-size: 16px;
+		color:#000;
+		cursor: pointer;
+		display: flex;
+		align-items: center;
+	}
+	label[for="range-from"]{
+		margin-right: 15px;
+	}
+	input#range-from, input#range-to {
+		margin-left: 10px;
+		display: inline-block;
+		width: 80px;
+		padding: 14px;
+		box-sizing: border-box;
+		border-radius: 5px;
+		border: none;
+		background-color: #eee;
+		text-align: center;
+	}
+	input:focus{
+		outline: none;
+	}
+	input[type="radio"],input[type="checkbox"]{
+		position: absolute;
+		opacity:0 ;
+	}
+	&__grid-filter{
+		label{
+			display: flex;
+			margin-bottom: 15px;
+			align-items: center;
+			font-size: 16px;
+			color: #333;
+			position: relative;
+			cursor: pointer;
+		}
+		label:before{
+			content: '';
+			border-radius: 50%;
+			width: 25px;
+			margin-right: 15px;
+			height: 25px;
+			border: 3px solid #ccc;
+			box-sizing: border-box;
+		}
+		input:checked + label:after{
+			content: '';
+			margin-right: 10px;
+			border-radius: 50%;
+			width: 9px;
+			height: 9px;
+			background-color: #ccc;
+			position: absolute;
+			left: 8px;
+			top:8px;
+		}
+	}
+	&__features{
+		label{
+			display: flex;
+			margin-bottom: 15px;
+			align-items: center;
+			font-size: 16px;
+			color: #333;
+			position: relative;
+			cursor: pointer;
+		}
+		label:before{
+			content: '';
+			border-radius: 4px;
+			width: 25px;
+			margin-right: 15px;
+			height: 25px;
+			border: 3px solid #ccc;
+			box-sizing: border-box;
+		}
+		input:checked + label:after{
+			content: '';
+			position: absolute;
+			width: 10px;
+			height: 15px;
+			border-bottom: 5px solid #ccc;
+			border-right: 5px solid #ccc;
+			border-radius: 2px;
+			transform:rotate(45deg);
+			left: 10px;
+			top: -1px;
+		}
+	}
+}

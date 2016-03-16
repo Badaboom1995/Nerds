@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="main-head">
+    <div class="container">
+      <div class="main-head__menu">
+          <a href = "index.html" class="main-head__logo ">
+            <img src="img/logo.png" alt="">
+          </a>
+        <div class="main-head__right-block">
+            <nav class="main-head__menu-nav">
+              <ul>
+                <li><a href="index.html">Студия</a></li>
+                <li><a href="#">Клиенты</a></li>
+                <li><a href="catalog.html">Магазин</a></li>
+                <li><a href="#">Контакты</a></li>
+              </ul>
+            </nav>
+            <div class="main-head__menu-basket">
+              <a href="#"><img src="img/basket.png" alt="">Корзина</a>
+            </div>
+        </div>
+      </div>
+      <div class="main-head__promo">
+        <p class="main-head__promo-text">
+          Добро пожаловать в магазин готовых макетов
+        </p>
+      </div>
+    </div>
+  </header>
+  <main class="container catalog-content">
+    <form class="catalog-content__filters">
+        <fieldset class="catalog-content__cost-filter">
+          <b class="catalog-content__filter-title">Стоимость:</b>
+          <div class="catalog-content__progress-bar">
+            <div class="catalog-content__range-line">
+              <div class="catalog-content__filled-line"></div>
+              <div class="catalog-content__range-from"></div>
+              <div class="catalog-content__range-to"></div>
+            </div>
+          </div>
+          <div class="catalog-content__cost-fields">
+            <label for="range-from">От <input type="text" id="range-from"></label>
+            <label for="range-to">До <input type="text" id="range-to"></label>
+          </div>
+        </fieldset>
+        <fieldset class="catalog-content__grid-filter">
+          <b class="catalog-content__filter-title">Сетка</b>
+          <input type="radio" name = "grid-filter" id = "adaptive"><label for="adaptive">Адаптивная</label>
+          <input type="radio" name = "grid-filter" id = "fixed"><label for="fixed">Фиксированная</label>
+          <input type="radio" name = "grid-filter" id = "flexible"><label for="flexible">Резиновая</label>
+        </fieldset>
+        <fieldset class="catalog-content__features">
+          <b class="catalog-content__filter-title">Особенности</b>
+          <input type="checkbox" id = "slider"><label for="slider">Слайдер</label>
+          <input type="checkbox" id = "features-block"><label for="features-block">Блок преимуществ</label>
+          <input type="checkbox" id = "news"><label for="news">Новости</label>
+          <input type="checkbox" id = "gallery"><label for="gallery">Галлерея</label>
+          <input type="checkbox" id = "basket"><label for="basket">Корзина</label>
+        </fieldset>
+        <button class = "button button--grey" type="submit">Показать</button>
+    </form>
+    <div class="catalog-content__products">
+      <form class="catalog-content__sorting-links">
+        <span>Сортировать: </span>
+        <input type="checkbox" id = "by-price"><label for="by-price">По цене</label>
+        <input type="checkbox" id = "by-type"><label for="by-type">По типу</label>
+        <input type="checkbox" id = "by-func"><label for="by-func">По функционалу</label>
+      </form>
+      <a class="catalog-content__products-item">
+        <div class="catalog-content__products-header">
+          <div class="header-circle"></div>
+          <div class="header-circle"></div>
+          <div class="header-circle"></div>
+        </div>
+        <div class="catalog-content__product-img"><img src="" alt=""></div>
+        <div class="catalog-content__product-modal"></div>
+      </a>
+      <div class="catalog-content__pagination">
+        <a href="" class="catalog-content__pagination-number">1</a>
+        <a href="" class="catalog-content__pagination-number">2</a>
+        <a href="" class="catalog-content__pagination-number">3</a>
+        <a href="" class="catalog-content__pagination-next">Следующая</a>
+      </div>
+    </div>
+
+  </main>
+  <script src="js/script.js" type="text/javascript"></script>
+</body>
+</html>

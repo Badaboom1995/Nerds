@@ -6,10 +6,9 @@
 	.icon-block {
 		margin-right: 80px;
 		display: flex;
-	}.icon:last-child {
-		margin-right: 0px;
 	}
 	.icon {
+		    display: inline-flex;
 		a{
 			align-items: center;
     		display: flex;
@@ -19,16 +18,18 @@
 			border-radius: 100%;
 			background-color: black;
 			transition: 0.4s;
+			margin-right: 20px;
 		}
 		
 		
-		
-   		 margin-right: 20px;
     	
     	img{
     		margin: 0 auto;
     		
     	}
+	}
+	.icon a:last-child {
+		margin-right: 0px;
 	}
 	.icon a:hover {
 		background-color:#fb565a;
@@ -44,10 +45,13 @@
 		    .footer--h1 {
 		    	margin: 0;
 		    	font-weight: normal;
+		    	    margin-bottom: 10px;
 		    }
 		    .footer--text {
+
 		    	margin: 0;
 		    	font-size: 16px;
+		    	
 		    }
 		    
 	}
