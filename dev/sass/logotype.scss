@@ -1,0 +1,15 @@
+.logotype {
+	padding: 50px 0px;
+	display: inline-flex;
+	        align-items: center;
+	border-bottom:2px solid #eeeeee;
+	&__item{
+		width: 300px;
+		text-align: center;
+		opacity: 0.3;
+		transition:0.5s ;
+	}
+	&__item:hover{
+		opacity: 1;
+	}
+}
