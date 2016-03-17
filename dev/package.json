@@ -4,17 +4,10 @@
   "description": "nerds",
   "main": "index.html",
   "dependencies": {
-    "gulp": "^3.9.1",
-    "imagemin-pngquant": "^4.2.2"
+    "gulp": "^3.9.1"
   },
   "devDependencies": {
-    "gulp-autoprefixer": "^3.1.0",
-    "gulp-clean-css": "^2.0.3",
-    "gulp-imagemin": "^2.4.0",
-    "gulp-notify": "^2.2.0",
-    "gulp-sass": "^2.2.0",
-    "gulp-uglify": "^1.5.3",
-    "gulp-uncss": "^1.0.4"
+    "gulp-sass": "^2.2.0"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

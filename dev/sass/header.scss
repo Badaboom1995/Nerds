@@ -1,19 +1,39 @@
 .main-head {
+	
 	background-color: #EEE;
 	padding: 30px 0px;
-	margin-bottom: 75px;
-
+	margin-bottom: 30px;
 	a {
 		color: #000;
 		text-decoration: none;
 		text-transform: uppercase;
 		font-weight: bold;
+		transition:0.5s ;
+		position: relative;
 	}
+	a:hover{
+		color: #F96A6E;
+	}
+	a:focus {
+		color: #8f8f8f;
+	}
+	a:active:before {
+		content: "";
+		width: 100%;
+    bottom: -30%;
+		position: absolute;
+		height: 2px;
+		background-color: #FB565A;
+	}
+
 	li {
+
 		list-style: none;
 		margin: 0;
 		padding: 0;
+		;
 	}
+
 
 	&__logo {
 	
@@ -22,8 +42,6 @@
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-
-
 	}
 	&__menu-nav {
 		margin-right: 45px;
@@ -34,8 +52,9 @@
 		li{
 			display: inline-block;
 			vertical-align: middle;
+			padding: 10px 20px;
 			a {
-				padding: 10px 20px;
+				
 				display: inline-block;
 				font-size: 14px;
 				
@@ -49,7 +68,7 @@
 	&__menu-basket {
 		padding: 0;
 	a {
-		padding: 10px 0px;
+		
 		img {
 			margin-right: 15px;
 			}
@@ -63,4 +82,5 @@
 		margin-top: 75px;
 		text-align: center;
 	}
+
 }
