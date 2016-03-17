@@ -6,6 +6,38 @@
 	font-size: 12px;
     text-decoration: none;
    display: inline-block;
-   
-           transition: 0.2s;
+   transition: 0.2s;
 }
+.web-btn {
+   			background-color: #fb565a;
+   		}
+   		
+   		.web-btn:hover {
+   			background-color: #d6494d;
+   			
+   		}
+   		.web-btn:focus {
+   			background-color: #b63538;
+   			box-shadow:0 3px #9B2D30 inset;
+   			
+   		}
+   		.app-btn {
+   			background-color: #00ca74;
+   		}
+   		.app-btn:hover {
+   			background-color: #01A25E;
+   		}
+   		.app-btn:focus {
+   			background-color: #009053;
+   			box-shadow: 0 3px #007b47 inset;
+   		}
+   		.presentation-btn {
+   			background-color: #efc84a;
+   		}
+   		.presentation-btn:hover {
+   			background-color: #D6AE2C;
+   		}
+   		.presentation-btn:focus {
+   			background-color: #C09B24;
+   			box-shadow: 0 3px #a3841f inset;
+   		}
