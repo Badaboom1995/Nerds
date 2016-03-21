@@ -1,0 +1,44 @@
+.top-slider{
+	background-color: #eeeeee;
+	padding-bottom: 60px;
+	padding-top: 20px;
+	position: relative;
+	.top-slider__carousel-elemet {
+		display: flex;
+		justify-content: space-between;
+		
+	}
+	.top-slider__carousel-elemet--text-block {
+		width: 350px;
+		p {
+			margin-bottom: 30px;
+		}
+		.btn {
+			padding: 10px 60px;
+			cursor: pointer;
+		}
+	}
+	.top-slider__carousel-elemet--img-block {
+		text-align: right;
+	}
+	.owl-dot {
+		width: 7px;
+		height: 7px;
+		background-color: white;
+		border-radius: 100%;
+		display: inline-block;
+		margin-right: 10px;
+		border:4px solid white;
+		
+	}
+	.owl-dots {
+	position: absolute;
+    top: 85%;
+    left: 50%;
+    transform: translateX(-50%);
+	    .active {
+			background-color:#c3c3c3;
+		}
+	}
+	
+}

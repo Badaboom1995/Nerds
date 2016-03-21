@@ -1,3 +1,8 @@
- $(window).resize(function(){
-window.setTimeout('location.reload()', 100);
+$(document).ready(function(){
+  $(".owl-carousel").owlCarousel({
+    items:1,
+     dots:true,
+     nav:false
+     
+  });
 });
