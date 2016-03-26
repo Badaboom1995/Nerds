@@ -15,6 +15,7 @@ $(document).ready(function(){
  var settings = {
  zoom: 17,
  center: centerMap,
+ scrollwheel: false,
  mapTypeControl: true,
  mapTypeControlOptions: {style: google.maps.MapTypeControlStyle.DROPDOWN_MENU},
  navigationControl: true,
