@@ -1,5 +1,5 @@
 .catalog-content{
-	display: flex;
+	display: flex !important;
 	&__filters{
 		width: 242px;
 		margin-right: 75px;
@@ -195,6 +195,7 @@
 		}
 	&__products{
 			font-size: 0;
+			margin-bottom: 80px;
 	}
 	&__products-item{
 			display: inline-block;

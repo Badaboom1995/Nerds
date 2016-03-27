@@ -2,7 +2,8 @@
 	
 	background-color: #EEE;
 	padding: 30px 0px;
-	margin-bottom: 30px;
+	margin-bottom: 80px;
+	
 	a {
 		color: #000;
 		text-decoration: none;
@@ -35,8 +36,8 @@
 	}
 
 
-	&__logo {
-	
+	&__logo:focus:before {
+		display: none;
 	}
 	&__menu{
 	display: flex;
